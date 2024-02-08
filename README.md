@@ -1,36 +1,16 @@
-# Welcome to Remix!
+# Shada Remix
 
-- [Remix Docs](https://remix.run/docs)
+Proyecto Shada.
 
-## Development
+## Set Up Prisma
 
-Start the Remix development asset server and the Express server by running:
-
+Instalar paquetes de prisma:
 ```sh
-npm run dev
+    npm install --save-dev prisma 
+    npm install @prisma/client
 ```
 
-This starts your app in development mode, which will purge the server require cache when Remix rebuilds assets so you don't need a process manager restarting the express server.
-
-## Deployment
-
-First, build your app for production:
-
+Iniciar prisma con Sqlite:
 ```sh
-npm run build
+    npx prisma init --datasource-provider sqlite
 ```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying express applications you should be right at home just make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
